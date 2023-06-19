@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaijaan+2:wght@400;600&family=Bree+Serif&family=Finlandica&family=Gulzar&family=Lora:ital,wght@1,600&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../bg2.png");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(rgb(89 161 89), rgb(221 221 138));
+    width: 84vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    top: 27px;
+    right: 243px;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 177px;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+}
+.head {
+    background: linear-gradient(rgb(240, 124, 124), rgb(228,228,129));
+    transform: scale(1.02);
+    border: .25vmin solid rgb(41, 8, 41);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: rgb(96, 13, 96);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
